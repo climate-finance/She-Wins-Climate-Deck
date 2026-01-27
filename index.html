@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Readiness - Enduring Planet</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ep: {
+                            navy: '#0B1C33',   /* Dark Navy */
+                            teal: '#00D1B2',   /* Vibrant Teal */
+                            light: '#F8FAFC',  /* Light Grey */
+                            surface: '#ffffff',
+                            border: '#E2E8F0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background-color: #ffffff;
+            color: #0B1C33;
+        }
+        /* Hide scrollbar for clean presentation */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .slide {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 4rem 6rem;
+            border-bottom: 1px solid #f1f5f9;
+            position: relative;
+        }
+        .slide-number {
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+            font-size: 0.8rem;
+            color: #cbd5e1;
+            font-weight: 600;
+        }
+        @media (max-width: 768px) {
+            .slide {
+                padding: 2rem;
+            }
+            .text-7xl { font-size: 3rem; }
+            .text-8xl { font-size: 3.5rem; }
+            .text-5xl { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: TITLE -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto">
+            <h1 class="text-7xl md:text-8xl font-extrabold text-ep-navy tracking-tight leading-[0.95] mb-12">
+                Investment <span class="text-ep-teal">Readiness</span><br>
+                & Capital Strategy
+            </h1>
+            
+            <div class="flex gap-8 items-start border-l-4 border-ep-teal pl-8 max-w-3xl">
+                <p class="text-2xl md:text-3xl text-gray-500 font-light leading-relaxed">
+                    Navigating the Climate Capital Stack: From Financial Hygiene to Fundraise Strategy.
+                </p>
+            </div>
+            
+            <div class="mt-20 flex items-center gap-4">
+                <div class="bg-ep-navy text-white px-6 py-3 rounded-full font-bold tracking-wide text-sm">Enduring Planet</div>
+            </div>
+        </div>
+        <div class="slide-number">01 / 17</div>
+    </section>
+
+    <!-- SLIDE 2: AGENDA -->
+    <section class="slide bg-ep-light">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-ep-navy mb-16">Today's Roadmap</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-ep-border flex items-start gap-6">
+                    <span class="text-6xl font-bold text-ep-teal/20 -mt-2">01</span>
+                    <div>
+                        <h3 class="text-2xl font-bold text-ep-navy mb-2">The Landscape</h3>
+                        <p class="text-gray-500">Who funds climate and why? (Angels, VCs, Foundations)</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-ep-border flex items-start gap-6">
+                    <span class="text-6xl font-bold text-ep-teal/20 -mt-2">02</span>
+                    <div>
+                        <h3 class="text-2xl font-bold text-ep-navy mb-2">Financial Hygiene</h3>
+                        <p class="text-gray-500">Accounting (Compliance) vs. FP&A (Strategy).</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-ep-border flex items-start gap-6">
+                    <span class="text-6xl font-bold text-ep-teal/20 -mt-2">03</span>
+                    <div>
+                        <h3 class="text-2xl font-bold text-ep-navy mb-2">Capital Strategy</h3>
+                        <p class="text-gray-500">Building the stack & evaluating tradeoffs.</p>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-ep-border flex items-start gap-6">
+                    <span class="text-6xl font-bold text-ep-teal/20 -mt-2">04</span>
+                    <div>
+                        <h3 class="text-2xl font-bold text-ep-navy mb-2">The Process</h3>
+                        <p class="text-gray-500">Running the "Marathon" (Pipeline, Data Room, Diligence).</p>
+                    </div>
+                </div>
+                 <!-- Item 5 -->
+                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-ep-border flex items-start gap-6 md:col-span-2">
+                    <span class="text-6xl font-bold text-ep-teal/20 -mt-2">05</span>
+                    <div>
+                        <h3 class="text-2xl font-bold text-ep-navy mb-2">Pitch Perfect</h3>
+                        <p class="text-gray-500">Tailoring your narrative for different audiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">02 / 17</div>
+    </section>
+
+    <!-- SECTION BREAK 1 -->
+    <section class="slide bg-ep-teal text-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <span class="text-9xl font-bold opacity-30 block mb-4">01</span>
+            <h2 class="text-7xl md:text-8xl font-extrabold tracking-tight">The Landscape</h2>
+        </div>
+        <div class="slide-number text-ep-navy/50">03 / 17</div>
+    </section>
+
+    <!-- SLIDE 4: LANDSCAPE CONTENT -->
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <div class="flex items-center gap-4 mb-16">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">The Landscape</div>
+                <h2 class="text-4xl font-bold text-white">Who is Funding Climate?</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <i data-lucide="users" class="text-ep-teal w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Angels & Syndicates</h3>
+                    <p class="text-sm text-gray-400 mb-4">Mission-driven, personal interest.</p>
+                    <div class="text-xs font-mono bg-black/20 p-2 rounded text-ep-teal">$10k - $100k Checks</div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <i data-lucide="rocket" class="text-ep-teal w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Venture Capital</h3>
+                    <p class="text-sm text-gray-400 mb-4">Power law returns (100x potential).</p>
+                    <div class="text-xs font-mono bg-black/20 p-2 rounded text-ep-teal">Fund Makers Only</div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <i data-lucide="castle" class="text-ep-teal w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Family Offices</h3>
+                    <p class="text-sm text-gray-400 mb-4">Wealth preservation & legacy/impact.</p>
+                    <div class="text-xs font-mono bg-black/20 p-2 rounded text-ep-teal">Patient but Opaque</div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10 hover:bg-white/10 transition-colors">
+                    <i data-lucide="heart-handshake" class="text-ep-teal w-10 h-10 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-2">Foundations</h3>
+                    <p class="text-sm text-gray-400 mb-4">Pure Impact / Philanthropic mandate.</p>
+                    <div class="text-xs font-mono bg-black/20 p-2 rounded text-ep-teal">Grants & PRIs</div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">04 / 17</div>
+    </section>
+
+    <!-- SECTION BREAK 2 -->
+    <section class="slide bg-ep-teal text-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <span class="text-9xl font-bold opacity-30 block mb-4">02</span>
+            <h2 class="text-7xl md:text-8xl font-extrabold tracking-tight">Financial Hygiene</h2>
+        </div>
+        <div class="slide-number text-ep-navy/50">05 / 17</div>
+    </section>
+
+    <!-- SLIDE 6: FINANCIAL HYGIENE CONTENT -->
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-white mb-6">Financial Hygiene: Two Systems</h2>
+            <p class="text-xl text-gray-400 mb-16">Founders often confuse these. One keeps you out of jail, the other helps you grow.</p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- System 1 -->
+                <div class="bg-white/5 p-10 rounded-3xl border-t-8 border-white/20">
+                    <div class="flex justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-white">Accounting</h3>
+                        <span class="text-xs font-bold uppercase tracking-widest text-gray-400">The Bedrock</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Goal:</strong> Compliance, Tax, Accuracy. Looking Backward.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Key Feature:</strong> Segmented Accounting.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Critical Rule:</strong> Track Restricted Grants separate from Unrestricted Cash.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- System 2 -->
+                <div class="bg-white/5 p-10 rounded-3xl border-t-8 border-ep-teal">
+                    <div class="flex justify-between items-start mb-8">
+                        <h3 class="text-3xl font-bold text-white">FP&A</h3>
+                        <span class="text-xs font-bold uppercase tracking-widest text-ep-teal">The Architecture</span>
+                    </div>
+                    <ul class="space-y-4 text-gray-300">
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Goal:</strong> Forecasting, Strategy, Fundraising. Looking Forward.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Tools:</strong> Financial Model & Cash Budget.</span>
+                        </li>
+                        <li class="flex gap-3">
+                            <i data-lucide="check" class="w-5 h-5 text-ep-teal shrink-0"></i>
+                            <span><strong>Output:</strong> Board Decks, Burn Rates, Runway Analysis.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">06 / 17</div>
+    </section>
+
+    <!-- SLIDE 7: FP&A TOOLS -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto">
+             <div class="flex items-center gap-4 mb-6">
+                <div class="bg-ep-teal text-ep-navy px-4 py-2 rounded font-bold text-sm uppercase tracking-wider">FP&A Toolset</div>
+            </div>
+            <h2 class="text-5xl font-bold text-ep-navy mb-16">Mapping vs. Surviving</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Tool A -->
+                <div class="border border-ep-border p-10 rounded-3xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-6 opacity-10">
+                        <i data-lucide="map" class="w-32 h-32 text-ep-navy"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-ep-navy mb-2">The Financial Model</h3>
+                    <p class="text-ep-teal font-serif italic text-xl mb-8">"Mapping the Destination"</p>
+                    
+                    <div class="space-y-4">
+                        <p class="text-gray-600"><strong>Use for:</strong> Fundraising & Long-term Strategy.</p>
+                        <p class="text-gray-600"><strong>Best Practice:</strong> Driver-Based. Link revenue to operational drivers (e.g., site acquisition pace), not just thin air.</p>
+                        <p class="text-gray-600"><strong>Integration:</strong> Must link P&L, Balance Sheet, and Cash Flow (3-Statement).</p>
+                    </div>
+                </div>
+
+                 <!-- Tool B -->
+                <div class="bg-ep-navy p-10 rounded-3xl relative overflow-hidden text-white">
+                    <div class="absolute top-0 right-0 p-6 opacity-10">
+                        <i data-lucide="life-buoy" class="w-32 h-32 text-ep-teal"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-white mb-2">Cash Strategy Budget</h3>
+                    <p class="text-ep-teal font-serif italic text-xl mb-8">"Surviving the Journey"</p>
+                    
+                    <div class="space-y-4">
+                        <p class="text-gray-300"><strong>Use for:</strong> Weekly cash management & Survival.</p>
+                        <p class="text-gray-300"><strong>Best Practice:</strong> Focus on Liquidity. Grants are "lumpy"—profit is not cash.</p>
+                        <p class="text-gray-300"><strong>Safety Zone:</strong> Set alerts if cash drops below 2 months of payroll.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">07 / 17</div>
+    </section>
+
+    <!-- SECTION BREAK 3 -->
+    <section class="slide bg-ep-teal text-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <span class="text-9xl font-bold opacity-30 block mb-4">03</span>
+            <h2 class="text-7xl md:text-8xl font-extrabold tracking-tight">Capital Strategy</h2>
+        </div>
+        <div class="slide-number text-ep-navy/50">08 / 17</div>
+    </section>
+
+    <!-- SLIDE 9: CAPITAL STACK -->
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-white mb-4">The Capital Stack</h2>
+            <p class="text-xl text-gray-400 mb-12">Building a stack beyond just equity.</p>
+
+            <div class="grid grid-cols-1 gap-6">
+                <!-- Dilutive -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl flex flex-col md:flex-row gap-6 items-center">
+                    <div class="w-full md:w-1/4">
+                        <h3 class="text-2xl font-bold text-ep-teal">Dilutive (Equity)</h3>
+                    </div>
+                    <div class="w-full md:w-3/4 text-gray-300">
+                        Most expensive capital long-term. Use for high-risk R&D and growth.
+                    </div>
+                </div>
+
+                <!-- Non-Dilutive Group -->
+                 <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white/10 p-6 rounded-xl border border-white/5">
+                        <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="landmark" class="w-4 h-4 text-ep-teal"></i> Grants</h4>
+                        <p class="text-sm text-gray-400">Public & Private. Free money but slow/restricted.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-xl border border-white/5">
+                        <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="building" class="w-4 h-4 text-ep-teal"></i> Bank Debt</h4>
+                        <p class="text-sm text-gray-400">Cheap (8-15%) but hard to get. Requires assets/profit/PGs.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-xl border border-white/5">
+                        <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="zap" class="w-4 h-4 text-ep-teal"></i> Venture Debt</h4>
+                        <p class="text-sm text-gray-400">Fast but expensive (warrants). Only for VC-backed startups.</p>
+                    </div>
+                    <div class="bg-white/10 p-6 rounded-xl border border-white/5">
+                        <h4 class="font-bold text-white mb-2 flex items-center gap-2"><i data-lucide="repeat" class="w-4 h-4 text-ep-teal"></i> Alt Credit</h4>
+                        <p class="text-sm text-gray-400">Revenue/Grant-based. Fast, no personal guarantees (e.g., Enduring Planet).</p>
+                    </div>
+                 </div>
+
+                 <!-- FOAK -->
+                 <div class="bg-gradient-to-r from-ep-teal/20 to-transparent border border-ep-teal/30 p-6 rounded-xl mt-4">
+                     <h3 class="text-xl font-bold text-white mb-2">FOAK (First-of-a-Kind)</h3>
+                     <p class="text-gray-300">Requires <strong>"Hybrid Capital"</strong>—mixing philanthropic grants with corporate equity to bridge the "Valley of Death".</p>
+                 </div>
+            </div>
+        </div>
+        <div class="slide-number">09 / 17</div>
+    </section>
+
+    <!-- SLIDE 10: TRADEOFFS -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-ep-navy mb-16">The 6 Key Tradeoffs</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- 1 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">01</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Dilution</h3>
+                    <p class="text-gray-600 text-sm">Do you give up ownership? Equity = Yes. Debt = No.</p>
+                </div>
+                 <!-- 2 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">02</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Cost of Capital</h3>
+                    <p class="text-gray-600 text-sm">What is the true cost? Interest + Fees + Warrants = Effective IRR.</p>
+                </div>
+                 <!-- 3 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">03</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Security</h3>
+                    <p class="text-gray-600 text-sm">What is at risk? Assets? Equipment? Your house (Personal Guarantee)?</p>
+                </div>
+                 <!-- 4 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">04</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Seniority</h3>
+                    <p class="text-gray-600 text-sm">Who gets paid first in a liquidation event?</p>
+                </div>
+                 <!-- 5 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">05</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Time</h3>
+                    <p class="text-gray-600 text-sm">How long until money is in the bank? Weeks vs. Months.</p>
+                </div>
+                 <!-- 6 -->
+                <div class="p-8 bg-ep-light rounded-2xl">
+                    <div class="text-4xl text-ep-teal mb-4 font-bold">06</div>
+                    <h3 class="text-xl font-bold text-ep-navy mb-2">Complexity</h3>
+                    <p class="text-gray-600 text-sm">How heavy is the diligence, legal paperwork, and reporting?</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">10 / 17</div>
+    </section>
+
+    <!-- SECTION BREAK 4 -->
+    <section class="slide bg-ep-teal text-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <span class="text-9xl font-bold opacity-30 block mb-4">04</span>
+            <h2 class="text-7xl md:text-8xl font-extrabold tracking-tight">The Process</h2>
+        </div>
+        <div class="slide-number text-ep-navy/50">11 / 17</div>
+    </section>
+
+    <!-- SLIDE 12: THE PROCESS CONTENT -->
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-white mb-12">Running the Marathon</h2>
+            
+            <div class="space-y-8 relative">
+                <!-- Line -->
+                <div class="absolute left-8 top-8 bottom-8 w-1 bg-white/10 md:block hidden"></div>
+
+                <!-- Phase 1 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+                    <div class="bg-ep-teal text-ep-navy w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl shrink-0">1</div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 flex-1">
+                        <h3 class="text-2xl font-bold text-white mb-2">The Warm Up (Coffee Chats)</h3>
+                        <p class="text-gray-400 mb-2"><strong>Goal:</strong> Fail safely. Pitch to friendlies to refine the story.</p>
+                        <p class="text-sm text-gray-500">Treat it like stand-up comedy. Don't film the special (Tier 1 VCs) until you've practiced in the clubs.</p>
+                    </div>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+                    <div class="bg-ep-teal text-ep-navy w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl shrink-0">2</div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 flex-1">
+                        <h3 class="text-2xl font-bold text-white mb-2">The Sprint</h3>
+                        <p class="text-gray-400 mb-2"><strong>Goal:</strong> Competitive Tension.</p>
+                        <p class="text-sm text-gray-500">Target 8-12 concurrent active/real conversations. Expect 200+ convos for Seed. Do not run sequentially—you need leverage.</p>
+                    </div>
+                </div>
+
+                <!-- Timing -->
+                 <div class="flex flex-col md:flex-row gap-8 items-start relative z-10">
+                    <div class="bg-ep-teal text-ep-navy w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl shrink-0">3</div>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/10 flex-1">
+                        <h3 class="text-2xl font-bold text-white mb-2">Timing Buffer</h3>
+                        <p class="text-gray-400 mb-2"><strong>Goal:</strong> Raise Before you run out of cash.</p>
+                        <p class="text-sm text-gray-500">Plan for a 25%+ buffer on both timeline and capital needs. Start 9-12 months before your zero cash date.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">12 / 17</div>
+    </section>
+
+    <!-- SLIDE 13: DATA ROOM -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-ep-navy mb-12">Building a Data Room that Closes the Round</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-ep-navy mb-6">Folder Structure</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 bg-ep-light rounded-xl border border-ep-border">
+                            <i data-lucide="folder" class="text-ep-teal"></i>
+                            <span class="text-ep-navy font-bold">Corporate</span>
+                            <span class="text-gray-500 text-sm ml-auto">Formation docs, Cap Table</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-ep-light rounded-xl border border-ep-border">
+                            <i data-lucide="folder" class="text-ep-teal"></i>
+                            <span class="text-ep-navy font-bold">Finance</span>
+                            <span class="text-gray-500 text-sm ml-auto">Historicals + Model + Tax</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-ep-light rounded-xl border border-ep-border">
+                            <i data-lucide="folder" class="text-ep-teal"></i>
+                            <span class="text-ep-navy font-bold">IP / Tech</span>
+                            <span class="text-gray-500 text-sm ml-auto">Patents, Tech Validation</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-ep-light rounded-xl border border-ep-border">
+                            <i data-lucide="folder" class="text-ep-teal"></i>
+                            <span class="text-ep-navy font-bold">Traction</span>
+                            <span class="text-gray-500 text-sm ml-auto">MOUs, LOIs, Customer Contracts, Logos</span>
+                        </div>
+                        <div class="flex items-center gap-4 p-4 bg-ep-light rounded-xl border border-ep-border">
+                            <i data-lucide="folder" class="text-ep-teal"></i>
+                            <span class="text-ep-navy font-bold">Team</span>
+                            <span class="text-gray-500 text-sm ml-auto">Resumes, "Why Us"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <div class="bg-ep-navy p-8 rounded-2xl text-white">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i data-lucide="shield" class="text-ep-teal"></i> Tiered Access</h3>
+                        <p class="text-gray-300 mb-4"><strong>1. Teaser:</strong> Deck + One-pager (Open to all).</p>
+                        <p class="text-gray-300"><strong>2. Data Room:</strong> Detailed docs (Only for serious diligence).</p>
+                    </div>
+
+                    <div class="bg-ep-teal/10 border border-ep-teal p-8 rounded-2xl">
+                         <h3 class="text-xl font-bold text-ep-navy mb-4 flex items-center gap-2"><i data-lucide="star" class="text-ep-teal"></i> Pro-Tip: Personalization</h3>
+                         <p class="text-gray-600">Create copies of the data room for each investor and rename to <strong>"Data Room - [Investor Name]"</strong>. It’s a small psychological trick that signals high-touch effort and partnership.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">13 / 17</div>
+    </section>
+
+    <!-- SLIDE 14: DILIGENCE -->
+    <section class="slide bg-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-white mb-16">Navigating Diligence Like a Boss</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <i data-lucide="pen-tool" class="text-ep-teal w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Build Reputation</h3>
+                    <p class="text-gray-400">Publish insights or blogs <em>before</em> raising. Show up in public spaces, speak, build credibility as an expert.</p>
+                </div>
+
+                 <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <i data-lucide="microscope" class="text-ep-teal w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Validation</h3>
+                    <p class="text-gray-400">Investors fear risk. Pre-empt this. Build a list of experts/references you can tap during fundraising who can validate your ideas.</p>
+                </div>
+
+                 <div class="bg-white/5 p-8 rounded-2xl border border-white/10">
+                    <i data-lucide="message-square" class="text-ep-teal w-12 h-12 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">The Running FAQ</h3>
+                    <p class="text-gray-400">Maintain a running FAQ doc. If an investor asks a question, add it. Save time for the next one.</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">14 / 17</div>
+    </section>
+
+    <!-- SECTION BREAK 5 -->
+    <section class="slide bg-ep-teal text-ep-navy">
+        <div class="max-w-7xl w-full mx-auto">
+            <span class="text-9xl font-bold opacity-30 block mb-4">05</span>
+            <h2 class="text-7xl md:text-8xl font-extrabold tracking-tight">Pitch Perfect</h2>
+        </div>
+        <div class="slide-number text-ep-navy/50">15 / 17</div>
+    </section>
+
+    <!-- SLIDE 16: PITCH PERFECT CONTENT (MOVED) -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto">
+            <h2 class="text-5xl font-bold text-ep-navy mb-6">Pitch Perfect: Tailoring the Narrative</h2>
+            <p class="text-xl text-gray-500 mb-16 max-w-3xl">One deck to rule them all. Customize the conversation, not the PDF.</p>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Left -->
+                <div class="bg-ep-light p-10 rounded-3xl border border-ep-border">
+                    <div class="flex items-center gap-4 mb-6">
+                         <i data-lucide="mic-2" class="text-ep-navy w-8 h-8"></i>
+                         <h3 class="text-2xl font-bold text-ep-navy">The Audience Adjustments</h3>
+                    </div>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="font-bold text-ep-teal w-24 shrink-0">Angels</span>
+                            <span class="text-gray-600">Focus on <strong>"The Dream"</strong> and Vision. Sell the emotion.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-bold text-ep-teal w-24 shrink-0">VCs</span>
+                            <span class="text-gray-600">Focus on <strong>"Venture Scale"</strong> (TAM) and Unit Economics.</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-bold text-ep-teal w-24 shrink-0">Families</span>
+                            <span class="text-gray-600">Focus on <strong>"Legacy"</strong>. Ask: "Who is the decision maker?"</span>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="font-bold text-ep-teal w-24 shrink-0">Impact</span>
+                            <span class="text-gray-600">Prove <strong>"Additionality"</strong>. Would this happen without you?</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Right -->
+                <div class="flex flex-col justify-center gap-8">
+                    <div class="p-8 border-l-4 border-ep-navy bg-ep-light/50">
+                        <h4 class="font-bold text-ep-navy text-lg mb-2">The Golden Rule</h4>
+                        <p class="text-gray-600 italic">"Don't maintain 5 different decks. Build one core deck with a deep appendix. Use the intro meeting to pivot the narrative based on who is in the room."</p>
+                    </div>
+                    <div class="p-8 border-l-4 border-ep-teal bg-ep-light/50">
+                        <h4 class="font-bold text-ep-navy text-lg mb-2">Family Office Tip</h4>
+                        <p class="text-gray-600 italic">"Unlike VCs, they don't have a standard playbook. You must ask about their process early to avoid wasting time."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-number">16 / 17</div>
+    </section>
+
+    <!-- SLIDE 17: CONCLUSION -->
+    <section class="slide bg-white">
+        <div class="max-w-7xl w-full mx-auto text-center">
+            <h2 class="text-6xl font-bold text-ep-navy mb-16">Key Takeaways</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
+                <!-- 1 -->
+                <div class="p-6 bg-ep-light rounded-xl border-t-4 border-ep-navy">
+                    <h3 class="font-bold text-ep-navy text-xl mb-2">Hygiene First</h3>
+                    <p class="text-gray-600 text-sm">Build good process (Accounting and FP&A) and establish a strong financial foundation before raising capital</p>
+                </div>
+                 <!-- 2 -->
+                <div class="p-6 bg-ep-light rounded-xl border-t-4 border-ep-teal">
+                    <h3 class="font-bold text-ep-navy text-xl mb-2">Know Your Audience</h3>
+                    <p class="text-gray-600 text-sm">Adjust your pitch and process to the investor type (Angel, VC, Fam Office, Foundation)</p>
+                </div>
+                 <!-- 3 -->
+                <div class="p-6 bg-ep-light rounded-xl border-t-4 border-ep-navy">
+                    <h3 class="font-bold text-ep-navy text-xl mb-2">Evaluate Tradeoffs</h3>
+                    <p class="text-gray-600 text-sm">Weigh Dilution against Cost, Security, Complexity, and Speed.</p>
+                </div>
+                 <!-- 4 -->
+                <div class="p-6 bg-ep-light rounded-xl border-t-4 border-ep-teal">
+                    <h3 class="font-bold text-ep-navy text-xl mb-2">Run a Process</h3>
+                    <p class="text-gray-600 text-sm">Prepare, plan, sequence, and execute on a clear and defined schedule. Don't wing it.</p>
+                </div>
+            </div>
+            
+            <div class="mt-20">
+                <p class="text-2xl font-serif italic text-gray-400">"Fundraising is a distraction. Build efficient systems so you can get back to work."</p>
+            </div>
+        </div>
+        <div class="slide-number">17 / 17</div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
